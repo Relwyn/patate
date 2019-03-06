@@ -18,6 +18,6 @@ public class LawnMowerTest {
 
     @org.junit.Test
     public void action() {
-        
+
     }
 }
