@@ -1,3 +1,14 @@
 language : java
 os : osx
-mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+install: ant deps
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk8
+
+
+
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
